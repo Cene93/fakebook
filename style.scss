@@ -1,0 +1,158 @@
+
+body { background: #eee; }
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*///////////
+    HEADER
+///////////*/
+
+header { 
+    .wrapper { 
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        padding: 0.5% 2%;
+        background: #99f;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin: 0;
+    }
+}
+
+.menu {  
+    width: 80%;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    margin-right: 2%;
+    
+    li {
+        flex-basis: 10%;
+        text-align: center;
+        list-style-type: none;
+    }
+    
+    input { padding: 3px; }    
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*///////////
+   CONTENT
+///////////*/
+
+.main { margin: 150px 20px 20px; }
+
+.name {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    h2 {
+        margin-left: 20px;
+        font-size: 40px;
+    }
+}
+
+h3 { 
+    font-size: 30px;
+    width: 212px;
+    text-align: center;
+}
+
+.sidebar {
+    
+    float: left;
+    display: inline-block;
+    width: 20%;
+    
+    ul { margin-bottom: 100px;
+    
+        li { 
+            margin-left: -40px;
+            list-style-type: none;
+            padding: 5px;
+            width: 200px;
+            border-left: 1px solid;
+            border-right: 1px solid;
+        }
+
+        li:before {
+            content:"• • • • • • • • • • • • • • • • • • • • • ";
+            color: #33c;
+        }
+    }
+}
+
+.content {
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    
+    article {
+        margin: 20px 0;
+        
+        .title { 
+            padding: 2px;
+            font-size: 20px;
+            background: #ddd;
+        }
+        
+        .meta {
+            margin: 10px 0;
+            background: #666;
+            color: #fff;
+            font-size: 14px;
+            padding: 2px;
+        }
+        
+    }
+}
+
+
+/*///////////
+   FOOTER
+///////////*/
+
+footer { 
+    background: #333;
+    height: 100px;
+    width: 101%;;
+    position: relative;
+    left: -9px;
+    bottom: -8px;
+    
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding-top: 30px;
+        position: absolute;
+        width: 95%;
+
+        li {
+            color: #fff;
+            list-style-type: none;
+            float: left;
+            font-size: 20px;
+        }
+    }
+}
